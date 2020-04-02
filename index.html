@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Fly_rest</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="">Fly_Rest &#9992;</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h3>Report Voli</h3>
+        </div>
+
+
+        <div name="divBottone" class="container mb-4">
+            <div class="row">
+
+                <!--<div class="col col-lg-11">
+                    <button type="button" onclick="" class="btn btn-success">FLY</button>
+                </div>!-->
+
+                <div class="col col-lg-1">
+                    <button type="button" onclick="executeCreatedList()"
+                        class="btn btn-primary btn-lg pull-right">LIST</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div name=divCards>
+
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header">Created/In progress</div>
+                <div class="card-body">
+                    <h5 class="card-title">Report</h5>
+                    <table class="table table-striped text-white" id="idCreatedTable"></table>
+                </div>
+            </div>
+
+
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Landed</div>
+                <div class="card-body">
+                    <h5 class="card-title">Report</h5>
+                    <table class="table table-striped text-white" id="idLandedTable"></table>
+                </div>
+            </div>
+
+            <div name="divBottone" class="mb-4">
+                <div class="pagination">
+    
+    
+                    <div>
+                        <button type="button" onclick="goToFirstPage()"
+                            class="btn pull-right">First Page</button>
+                    </div>
+
+                    <div>
+                        <button type="button" onclick="goToPreviousPage()"
+                            class="btn pull-right">Previous</button>
+                    </div>
+                    
+                    <div>
+                        <select id="idPagine" class="form-control" onchange="changePageSelect()"></select>
+                    </div>  
+
+                    <div>
+                        <button type="button" onclick="goToNextPage()"
+                            class="btn pull-right">Next</button>
+                    </div>
+
+                    <div>
+                        <button type="button" onclick="goToLastPage()"
+                            class="btn pull-right">Last Page</button>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+
+
+</body>
+
+</html>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/createdList.js"></script>
+<script src="js/landedList.js"></script>
